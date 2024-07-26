@@ -33,10 +33,10 @@ drawer.addEventListener("click", (event: MouseEvent) => {
   }
 });
 
-function openDrawer(): void {
-  drawer.classList.add("open");
-  burgerMenu.classList.add("active");
-}
+// function openDrawer(): void {
+//   drawer.classList.add("open");
+//   burgerMenu.classList.add("active");
+// }
 
 function closeDrawer(): void {
   drawer.classList.remove("open");
