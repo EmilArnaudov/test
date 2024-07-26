@@ -10,6 +10,7 @@ html * {
 
 p {
   word-wrap: break-word;
+  font-size: 16px;
 }
 
 ol {
@@ -17,13 +18,14 @@ ol {
 }
 
 .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: black;
   z-index: -1;
-  opacity: 0.6;
-  /* z-index: 2; */
+  opacity: 0.4;
 }
 
 body {
@@ -32,7 +34,6 @@ body {
   background-image: url('/public/bg.jpg');
   background-repeat: repeat;
   background-size: cover;
-  background-blend-mode: luminosity;
   /* background-color: black; */
   color: white;
 }
@@ -115,26 +116,35 @@ body {
 
 .subheading {
   font-family: Roboto, sans-serif;
-  font-size: 20px;
+  font-size: 26px;
   text-align: left;
   color: #E7A41C;
+  margin-left: 6px;
   /* font-weight: 700;
   margin-top: 10px;
   margin-bottom: 10px; */
 }
 
 .outer-wrapper {
-  /* background-color: black;
-  opacity: 0.65; */
+  position: relative;
 }
 
 .inner-wrapper {
+  position: relative;
   padding: 10px;
-  box-shadow: white 0px 0px 5px;
+  box-shadow: white 0px 0px 4px;
   border-radius: 6px;
+}
 
-  /* background-color: black;
-  opacity: 0.6; */
+.inner-wrapper-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.4;
 }
 
 .product-list-item {
