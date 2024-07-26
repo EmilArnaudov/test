@@ -17,7 +17,6 @@ document.addEventListener("click", (event: MouseEvent) => {
 
 drawer.addEventListener("click", (event: MouseEvent) => {
   const target = event.target as HTMLElement;
-  console.log(target.dataset.id);
   if (!target.dataset.id) return;
 
   closeDrawer();
