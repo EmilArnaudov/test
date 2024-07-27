@@ -17,6 +17,10 @@ ol {
   padding-left: 20px;
 }
 
+.divider {
+  border-top: 1px solid #E7A41C;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -25,7 +29,7 @@ ol {
   bottom: 0;
   background-color: black;
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.65;
 }
 
 body {
@@ -39,7 +43,12 @@ body {
 }
 
 .main {
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
+}
+
+.title {
+  font-size: 22px;
+  /* font-weight: bold; */
 }
 
 .header {
@@ -48,7 +57,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px 20px 12px;
+  padding: 20px 20px 16px 12px;
+  border-bottom: 1px solid grey;
+  background-color: white;
+  color: black;
+
 }
 
 .logo {
@@ -109,6 +122,8 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 32px;
   text-align: center;
+  margin-top: 24px;
+  margin-bottom: 42px;
   /* font-weight: 700;
   margin-top: 10px;
   margin-bottom: 10px; */
@@ -127,6 +142,20 @@ body {
 
 .outer-wrapper {
   position: relative;
+  padding-top: 8px;
+  margin-bottom: 52px;
+
+}
+
+.outer-wrapper-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: -1;
+  opacity: 0.2;
 }
 
 .inner-wrapper {
@@ -144,7 +173,7 @@ body {
     bottom: 0;
     background-color: black;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.1;
 }
 
 .product-list-item {
