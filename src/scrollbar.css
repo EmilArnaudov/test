@@ -2,12 +2,6 @@
   width: 3px;
 }
 
-/* ::-webkit-scrollbar-track {
-  display: none;
-  background: black;
-  border-radius: 10px;
-} */
-
 ::-webkit-scrollbar-thumb {
   background: grey;
   border-radius: 10px;

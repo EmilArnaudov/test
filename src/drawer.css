@@ -1,0 +1,57 @@
+@import './variables.css';
+
+.burger-bar {
+  margin-top: 2px;
+  width: 80%;
+  height: 4px;
+  position: relative;
+  background-color: var(--white);
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.burger-menu.active .burger-bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+.burger-menu.active .burger-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active .burger-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #d38e14;
+  transition: left 0.3s ease-in-out;
+  z-index: 10;
+  text-transform: capitalize;
+
+}
+
+.drawer.open {
+  left: 0;
+}
+
+.drawer ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.drawer ul li {
+  margin-bottom: 15px;
+}
+
+.drawer ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 18px;
+}
